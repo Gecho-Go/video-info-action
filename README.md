@@ -2,7 +2,8 @@
 
 macOS Finder 右键快速操作，一秒查看视频分辨率、帧率、编码、时长。
 
-![Uploading 截屏2026-04-08 10.15.49.png…]()
+<img width="427" height="131" alt="截屏2026-04-08 10 16 26" src="https://github.com/user-attachments/assets/71d7c32f-d9ea-4352-a00a-102209efc58c" />
+
 
 <img width="532" height="340" alt="截屏2026-04-08 10 14 52" src="https://github.com/user-attachments/assets/7173322f-1fb8-4723-a6e5-1ee7869413f8" />
 
