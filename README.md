@@ -2,9 +2,8 @@
 
 macOS Finder 右键快速操作，一秒查看视频分辨率、帧率、编码、时长。
 
-     <img width="434" height="135" alt="截屏2026-04-08 10 17 00" src="https://github.com/user-attachments/assets/acbbdc7b-1cf4-4f22-8d53-5c78ac5626e4" />
-
-<img width="532" height="340" alt="截屏2026-04-08 10 14 52" src="https://github.com/user-attachments/assets/7173322f-1fb8-4723-a6e5-1ee7869413f8" />
+<img width="434" height="135" alt="截屏2026-04-08 10 17 00" src="https://github.com/user-attachments/assets/acbbdc7b-1cf4-4f22-8d53-5c78ac5626e4" />
+<img width="450" height="249" alt="截屏2026-04-08 10 14 52" src="https://github.com/user-attachments/assets/e75c9a44-8a84-40fb-9c40-59086d810101" />
 
 ## 为什么做这个
 
