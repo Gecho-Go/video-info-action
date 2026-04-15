@@ -76,7 +76,7 @@ for f in "$@"; do
     NAME=$(basename "$f")
 
     COLOR=$(echo "$INFO" | grep ^color | cut -d= -f2-)
-    DUR=$(printf "%02d:%02d:%02d" $((DUR_S/3600)) $(((DUR_S%3600)/60)) $((DUR_S%60)))
+    DUR=$(echo "$DUR_S" | awk '{t=$1; h=int(t/3600); m=int((t%3600)/60); s=int(t%60); ms=int((t-int(t))*1000); printf "%02d:%02d:%02d.%03d",h,m,s,ms}')
     SIZE=$(echo "$SIZE_B" | awk '{printf "%.1f MB", $1/1024/1024}')
 
     if [ "$WIDTH" -gt "$HEIGHT" ]; then ORIENT="横屏"; else ORIENT="竖屏"; fi
