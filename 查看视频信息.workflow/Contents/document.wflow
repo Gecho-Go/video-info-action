@@ -81,9 +81,9 @@ for f in "$@"; do
 
     if [ "$WIDTH" -gt "$HEIGHT" ]; then ORIENT="横屏"; else ORIENT="竖屏"; fi
 
-    BODY="📐 分辨率：${WIDTH} × ${HEIGHT}（${ORIENT}）\n🎞 帧率　：${FPS} fps\n🎬 编码　：${CODEC}"
-    if [ -n "$COLOR" ]; then BODY="${BODY}\n🎨 色彩　：${COLOR}"; fi
-    BODY="${BODY}\n🕐 时长　：${DUR}\n💾 大小　：${SIZE}"
+    BODY="分辨率：${WIDTH} × ${HEIGHT}（${ORIENT}）\n帧率　：${FPS} fps\n编码　：${CODEC}"
+    if [ -n "$COLOR" ]; then BODY="${BODY}\n色彩　：${COLOR}"; fi
+    BODY="${BODY}\n时长　：${DUR}\n大小　：${SIZE}"
 
     osascript -e "display dialog \"📄 $NAME\n\n${BODY}\" with title \"视频信息\" buttons {\"好的\"} default button 1"
 done</string>
