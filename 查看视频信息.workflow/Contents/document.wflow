@@ -76,6 +76,7 @@ for f in "$@"; do
     NAME=$(basename "$f")
 
     COLOR=$(echo "$INFO" | grep ^color | cut -d= -f2-)
+    BITRATE=$(echo "$INFO" | grep ^bitrate | cut -d= -f2-)
     DUR=$(echo "$DUR_S" | awk '{t=$1; h=int(t/3600); m=int((t%3600)/60); s=int(t%60); ms=int((t-int(t))*1000); printf "%02d:%02d:%02d.%03d",h,m,s,ms}')
     SIZE=$(echo "$SIZE_B" | awk '{printf "%.1f MB", $1/1024/1024}')
 
@@ -83,6 +84,7 @@ for f in "$@"; do
 
     BODY="分辨率：${WIDTH} × ${HEIGHT}（${ORIENT}）\n帧率　：${FPS} fps\n编码　：${CODEC}"
     if [ -n "$COLOR" ]; then BODY="${BODY}\n色彩　：${COLOR}"; fi
+    if [ -n "$BITRATE" ]; then BODY="${BODY}\n码率　：${BITRATE}"; fi
     BODY="${BODY}\n时长　：${DUR}\n大小　：${SIZE}"
 
     osascript -e "display dialog \"📄 $NAME\n\n${BODY}\" with title \"视频信息\" buttons {\"好的\"} default button 1"
